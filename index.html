@@ -60,9 +60,12 @@
           <div class="backdrop is-hidden" data-backdrop>
             <div class="modal">
             <button class="close-modal" data-close-modal>
-              <img src="./images/close-black.svg" alt="кнопка закрити" width="18px">
+              <svg class="close-icon">
+                <use href="./images/icons.svg#icon-close-black">
+                </use>
+              </svg>
             </button>
-            <form action="" class="form js-request-form">
+            <form class="form js-request-form">
               <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
 
               <div class="form-field">
@@ -442,7 +445,21 @@
           </li>
         </ul>
         </div>
+        <form class="subscribe-form">
+
+          <div class="sings">
+          <label class="subscribe-label" for="subscribe">Підпишіться на розсилку</label>
+          <input class="subscribe-input" type="text" name="subscribe" id="subscribe" placeholder="E-mail">
+        </div>
+  
+          <button class="subscribe-button" type="submit">
+            Підписатися
+          <svg class="icon-telegram">
+            <use href="./images/icons.svg#icon-telegram"></use>
+          </svg></button>
+        </form>
       </div>
+      
     </footer>
     <script>
       const refs = {

@@ -794,10 +794,12 @@ display: flex;
 }
 
 .close-modal {
-  position: absolute;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 490px;
-  margin-top: 8px;
+  margin-top: 8px;  
+  padding: 0;
 
   width: 30px;
   height: 30px;
@@ -818,7 +820,10 @@ textarea {
 }
 
 .form {
-  padding: 40px;
+  padding-top: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
 
 .form-title {
@@ -883,4 +888,60 @@ textarea {
   min-height: 40px;
   margin-bottom: 10px;
 
+}
+
+.subscribe-form {
+  display: flex;
+margin-left: 93px;
+}
+
+.subscribe-label {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--header-bg-color);
+}
+
+.subscribe-input {
+  width: 358px;
+  min-height: 50px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  margin-top: 35px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);border-radius: 4px;
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--header-bg-color);
+}
+
+.sings {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-telegram {
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 24px;
+  height: 24px;
+
+  fill: currentColor;
 }
