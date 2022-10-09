@@ -70,27 +70,46 @@
 
               <div class="form-field">
                 <label class="form-label" for="name">Ім'я</label>
-              <input class="form-input" type="name" name="name" id="name">
+              <div class="for-input">
+                <input class="form-input" type="text" name="name" id="name" placeholder=" ">
+              <svg class="icon-form" >
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+              </div>
               </div>
 
               <div class="form-field">
                 <label class="form-label" for="tel">Телефон</label>
-              <input class="form-input" type="tel" name="tel" id="tel">
+              <div class="for-input">
+                <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
+              <svg class="icon-form">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              </div>
               </div>
 
              <div class="form-field">
               <label class="form-label" for="mail">Пошта</label>
-              <input class="form-input" type="email" name="mail" id="mail">
+              <div class="for-input">
+                <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
+              <svg class="icon-form">
+                <use href="./images/icons.svg#icon-e-mail"></use>
+              </svg>
+              </div>
              </div>
 
               <div class="form-field">
                 <label class="form-label" for="coment">Коментар</label>
-              <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
-
-              <div class="policy">
-                <input type="checkbox" name="policy" id="policy" />
-                <label class="label-policy" for="policy">Погоджуюся з розсилкою та приймаю <span class="condition"><a href="">Умови договору</a></span></label>
-              </div>
+              <textarea name="coment" id="coment" cols="30" rows="10" class="coment" placeholder="Введіть текст"></textarea>
+              <label class="policy">
+                  <input type="checkbox" name="policy" class="check-policy" required>
+                  <svg class="icon-check">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                  <svg class="no-check">
+                    <use href="./images/icons.svg#icon-no-check"></use>
+                  </svg>
+                  Погоджуюся з розсилкою та приймаю <span><a href="" class="condition"> Умови договору</a></span></label>
               <button class="send" type="submit">Відправити</button>
               </div>
             </form>
@@ -328,9 +347,9 @@
                   </a>
                 </li>
               </ul>
+            </div>
             </li>
           </ul>
-        </div>
         </div>
       </section>
       <section class="section section-studia sectin-clients">
