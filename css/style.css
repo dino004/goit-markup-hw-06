@@ -981,15 +981,33 @@ textarea {
   border-color: var(--accent-color);
 }
 
-.label-policy {
-  margin-left: 9px;
+.policy {
+  width: 423px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* .check-policy {
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  background-image: url(/no-check.svg);
+}
+
+.check-policy:checked + .check__box {
+  background-image: url(/check.svg);
+} */
 
 .check-policy {
+  position: absolute;
   -webkit-appearance:none;
   -moz-appearance:none;
-  appearance:none;
+  appearance: none;
 }
 
 .no-check {
@@ -1005,7 +1023,7 @@ textarea {
   height: 15px;
   top: 50%;
   transform: translateY(-50%);
-  left: 21.8px;
+  left: 9px;
 
   opacity: 0;
 }
